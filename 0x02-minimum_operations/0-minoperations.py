@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+""" Method to calculate the minimum operations needed."""
+
 def minOperations(n):
     """
     Calculates the minimum number of operations needed to get n number of H characters in the file.
