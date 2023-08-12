@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 """ Method to calculate the minimum operations needed."""
 
+
 def minOperations(n):
     """
-    Calculates the minimum number of operations needed to get n number of H characters in the file.
+    Calculates the minimum number of operations needed to get n number
+    of H characters in the file.
 
     n: The number of H characters to achieve.
     Return: The minimum number of operations needed to achieve n H characters.
@@ -20,4 +22,3 @@ def minOperations(n):
             minoper -= 1
         minoper += 1
     return num_operations
-
