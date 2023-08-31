@@ -15,7 +15,7 @@ def nqueens(N, m, chessboard):
         if not isController:
             chessboard.append([m, i])
             if (N - 1) != m:
-                nqueens(N, m + 1,chessboard)
+                nqueens(N, m + 1, chessboard)
             else:
                 print(chessboard)
             del chessboard[-1]
