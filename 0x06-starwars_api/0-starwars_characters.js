@@ -15,7 +15,7 @@ if (process.argv.length === 3) {
 
       // Get The Star Wars characters.
       for (const chars of urlList) {
-        const char_list = () => {
+        const charList = () => {
           return new Promise((resolve, reject) => {
             request(chars, async (error, response, body) => {
               if (error) {
@@ -25,7 +25,7 @@ if (process.argv.length === 3) {
             });
           });
         };
-        console.log(await char_list());
+        console.log(await charList());
       }
     }
   });
