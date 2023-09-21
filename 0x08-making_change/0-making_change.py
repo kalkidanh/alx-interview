@@ -4,10 +4,19 @@
 
 def makeChange(coins, total):
     """ Determine the fewest number of coins that add to a given total."""
-    if total <= 0:
+    if total < 1:
         return 0
-    min_coin = [0] + [float("inf")] * (total)
-    for coin in coins:
-        for i in range(coin, total + 1):
-            min_coin[i] = min(min_coin[i], min_coin[i - coin] + 1)
-    return min_coin[-1] if min_coin[-1] != float("inf") else -1
+
+    minCoins = 0
+    coins.sort()
+    coins.reverse()
+
+    for i in coins:
+        change = int(total / i)
+        total -= change * i
+        minCoins += change
+        if total == 0:
+            return minCoins
+
+    if total != 0:
+        return -1
