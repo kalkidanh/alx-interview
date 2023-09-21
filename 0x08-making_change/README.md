@@ -1,0 +1,3 @@
+This algorithm works by building a table of the fewest number of coins needed to meet each amount from 0 to total. The table is initialized with 0 for the first amount, since it takes 0 coins to make change for 0. Then, for each subsequent amount, the algorithm considers all possible combinations of coins that can be used to make change for that amount. It then chooses the combination that uses the fewest coins and stores the number of coins in the table.
+
+Once the table is complete, the algorithm simply returns the value in the table for the total amount. This value is the fewest number of coins needed to make change for the total amount.
