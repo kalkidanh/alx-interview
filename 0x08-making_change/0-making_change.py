@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Given a pile of coins, find the fewest combinations that make a sum."""
+""" Given a pile of coins, find the lowest combinations that make a sum."""
 
 
 def makeChange(coins, total):
